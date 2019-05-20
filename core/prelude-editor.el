@@ -245,6 +245,8 @@
 
 ;; dired - reuse current buffer by pressing 'a'
 (put 'dired-find-alternate-file 'disabled nil)
+(with-eval-after-load 'dired
+  (define-key dired-mode-map (kbd "RET") 'dired-find-alternate-file))
 
 ;; always delete and copy recursively
 (setq dired-recursive-deletes 'always)

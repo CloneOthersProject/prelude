@@ -128,4 +128,9 @@
         (yasnippet . "melpa-stable")
         (zenburn-theme . "melpa-stable")
         (zop-to-char . "melpa-stable")
+
+        ;; myconfig
+
+        (popwin . "melpa-stable")
+        (solarized . "melpa-stable")
         ))

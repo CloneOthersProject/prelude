@@ -66,6 +66,7 @@ Windows external keyboard from time to time."
 (when (fboundp 'set-fontset-font)
   (set-fontset-font t 'unicode "Apple Color Emoji" nil 'prepend))
 
+;; 在mac打开该文件所在文件夹
+(global-set-key (kbd "S-SPC o f") 'reveal-in-osx-finder)
 
 (provide 'prelude-macos)
-;;; prelude-macos.el ends here
