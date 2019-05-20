@@ -1,5 +1,4 @@
 ;;; Uncomment the modules you'd like to use and restart Prelude afterwards
-(message "hello this prelude modules")
 
 ;; Emacs IRC client
 (require 'prelude-erc)
@@ -22,7 +21,7 @@
 ;; (require 'prelude-go)
 ;; (require 'prelude-haskell)
 (require 'prelude-js)
-(require 'prelude-latex)
+;; (require 'prelude-latex)
 (require 'prelude-lisp)
 (require 'prelude-lsp)
 ;; (require 'prelude-ocaml)
@@ -37,4 +36,4 @@
 (require 'prelude-ts)
 (require 'prelude-web) ;; Emacs mode for web templates
 (require 'prelude-xml)
-;;(require 'prelude-yaml)
+;; (require 'prelude-yaml)

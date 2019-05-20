@@ -1,5 +1,5 @@
 (add-to-list 'package-archives
-             '("melpa-stable" . "https://stable.melpa.org/packages/") t)
+             '("melpa-stable" . "http://elpa.emacs-china.org/melpa-stable/") t)
 
 (setq package-pinned-packages
       '(
@@ -72,6 +72,7 @@
         (helm-core . "melpa-stable")
         (helm-descbinds . "melpa-stable")
         (helm-projectile . "melpa-stable")
+        (hungry-delete . "melpa-stable")
         (imenu-anywhere . "melpa-stable")
         (inf-ruby . "melpa-stable")
         (js2-mode . "melpa-stable")
