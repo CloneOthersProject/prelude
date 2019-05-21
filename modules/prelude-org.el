@@ -32,10 +32,12 @@
 
 ;;; Code:
 
+(require 'org-pomodoro)
+
 (add-to-list 'auto-mode-alist '("\\.org\\’" . org-mode))
-(global-set-key "\C-cl" 'org-store-link)
-(global-set-key "\C-ca" 'org-agenda)
-(global-set-key "\C-cb" 'org-iswitchb)
+(global-set-key (kbd "S-SPC o l") 'org-store-link)
+(global-set-key (kbd "S-SPC o a") 'org-agenda)
+(global-set-key (kbd "S-SPC o b") 'org-iswitchb)
 (setq org-log-done t)
 
 (defun prelude-org-mode-defaults ()
@@ -46,12 +48,27 @@
     (define-key newmap (kbd "C-c -") nil)
     (define-key newmap (kbd "C-a") nil)
     (make-local-variable 'minor-mode-overriding-map-alist)
-    (push `(prelude-mode . ,newmap) minor-mode-overriding-map-alist))
-)
+    (push `(prelude-mode . ,newmap) minor-mode-overriding-map-alist)))
 
 (setq prelude-org-mode-hook 'prelude-org-mode-defaults)
 
 (add-hook 'org-mode-hook (lambda () (run-hooks 'prelude-org-mode-hook)))
+
+(setq org-agenda-files '("~/org"))
+
+(setq org-capture-templates
+      '(("t" "Todo" entry (file+headline "~/org/work.org" "临时性工作安排")
+         "* TODO [#B] %?\n  %i\n"
+         :empty-lines 1)
+        ("s" "Todo" entry (file+headline "~/org/sale.org" "销售系统工作内容")
+         "* TODO [#B] %?\n  %i\n"
+         :empty-lines 1)
+        ("d" "Todo" entry (file+headline "~/org/daily.org" "工作日志")
+         "* TODO [#B] %?\n  %i\n"
+         :empty-lines 1)
+        ))
+
+(global-set-key (kbd "S-SPC o r") 'org-capture)
 
 (provide 'prelude-org)
 

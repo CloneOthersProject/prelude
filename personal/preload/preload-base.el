@@ -14,7 +14,6 @@
 ;; 禁止自动保存和备份
 (setq-default make-backup-files nil)
 (setq-default auto-save-default nil)
-
 ;; 内容有修改时自动更新文件
 (global-auto-revert-mode t)
 
