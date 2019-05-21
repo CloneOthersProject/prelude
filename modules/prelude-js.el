@@ -70,7 +70,7 @@
   (setq indent-tabs-mode nil))
 
 ;; 设置两个空格和四个空格切换
-(global-set-key (kbd "S-SPC t i") 'my-toggle-web-indent)F
+(global-set-key (kbd "S-SPC t i") 'my-toggle-web-indent)
 
 (provide 'prelude-js)
 
