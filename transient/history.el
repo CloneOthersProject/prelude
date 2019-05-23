@@ -1,3 +1,3 @@
 ((magit-diff nil
-             ("--no-ext-diff" "--stat"))
+	     ("--no-ext-diff" "--stat"))
  (magit-dispatch nil))

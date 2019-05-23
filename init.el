@@ -39,6 +39,11 @@
 ;; You may delete these explanatory comments.
                                         ;(package-initialize)
 
+(require 'cask "~/.cask/cask.el")
+(cask-initialize)    ; 类似于 package-initialize
+(require 'pallet)
+(pallet-mode t)      ; 激活 pallet, 在安装包时将 Cask 文件写入相应信息
+
 (defvar current-user
   (getenv
    (if (equal system-type 'windows-nt) "USERNAME" "USER")))
