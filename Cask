@@ -13,6 +13,7 @@
 (depends-on "htmlize")
 (depends-on "hungry-delete")
 (depends-on "idle-highlight-mode")
+(depends-on "iedit")
 (depends-on "magit")
 (depends-on "multiple-cursors")
 (depends-on "nyan-mode")

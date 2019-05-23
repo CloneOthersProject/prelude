@@ -9,6 +9,9 @@
 (require 'helm-ag)
 (global-set-key (kbd "S-SPC p f") 'helm-do-ag-project-root)
 
+(require 'iedit)
+(global-set-key (kbd "S-SPC e") 'iedit-mode)
+
 ;;设置最近打开的文件
 ;; (require 'recentf)
 ;; (recentf-mode 1)
