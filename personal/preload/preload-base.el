@@ -3,7 +3,7 @@
                                         ;更改光标样式
 (setq-default cursor-type 'bar)
 ;;设置字体
-(set-default-font "Source Code Variable-14" t t)
+(set-default-font "Source Code Variable-16" t t)
 (setq-default line-spacing 1)           ;设置行间距
 
 ;;设置默认开启全屏
