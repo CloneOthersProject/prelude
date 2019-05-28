@@ -9,6 +9,7 @@
 (depends-on "cask")
 (depends-on "cask-mode")
 (depends-on "company")
+(depends-on "company-box")
 (depends-on "company-lsp")
 (depends-on "counsel")
 (depends-on "crux")
