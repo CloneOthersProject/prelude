@@ -52,6 +52,22 @@
 
   (add-hook 'js2-mode-hook (lambda () (run-hooks 'prelude-js-mode-hook))))
 
+;; (defun set-web-indent (width)
+;;   (if (or (eq major-mode 'js-mode) (eq major-mode 'js2-mode))
+;;       (progn
+;;         (setq js-indent-level width)
+;;         (setq js2-basic-offset width)))
+;;   (if (eq major-mode 'web-mode)
+;;       (progn
+;;         (setq web-mode-markup-indent-offset width)
+;;         (setq web-mode-css-indent-offset width)
+;;         (setq web-mode-code-indent-offset width)))
+;;   (if (eq major-mode 'css-mode)
+;;       (setq css-indent-offset width))
+;;   (setq indent-tabs-mode nil))
+
+;; (set-web-indent 2)
+
 ;; 定义两个空格和四个空格之间的切换
 (defun my-toggle-web-indent ()
   (interactive)
