@@ -42,7 +42,7 @@
 (menu-bar-mode -1)
 
 ;; the blinking cursor is nothing, but an annoyance
-(blink-cursor-mode -1)
+(blink-cursor-mode t)
 
 ;; disable the annoying bell ring
 (setq ring-bell-function 'ignore)
@@ -53,7 +53,7 @@
 ;; nice scrolling
 (setq scroll-margin 0
       scroll-conservatively 100000
-      scroll-preserve-screen-position 1)
+      scroll-preserve-screen-position nil) ;如何设置 t 相对屏幕位置不变
 
 ;; mode line settings
 (line-number-mode t)
