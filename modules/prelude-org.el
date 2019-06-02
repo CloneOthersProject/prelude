@@ -57,7 +57,10 @@
 (setq org-agenda-files '("~/org"))
 
 (setq org-capture-templates
-      '(("t" "Todo" entry (file+headline "~/org/work.org" "临时性工作安排")
+      '(("e" "Todo" entry (file+headline "~/org/emacs_study.org" "emacs笔记")
+         "* TODO [#B] %?\n  %i\n"
+         :empty-lines 1)
+        ("t" "Todo" entry (file+headline "~/org/work.org" "临时性工作安排")
          "* TODO [#B] %?\n  %i\n"
          :empty-lines 1)
         ("s" "Todo" entry (file+headline "~/org/sale.org" "销售系统工作内容")
