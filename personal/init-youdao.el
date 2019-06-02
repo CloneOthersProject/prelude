@@ -1,0 +1,11 @@
+(require 'youdao-dictionary)
+(setq url-automatic-caching t)
+
+(global-set-key (kbd "S-SPC y s") 'youdao-dictionary-search-at-point)
+(global-set-key (kbd "S-SPC y i") 'youdao-dictionary-search-from-input)
+
+;; 保存搜索记录
+(setq youdao-dictionary-search-history-file "~/.emacs.d/.youdao")
+;; 支持中文分词
+(setq youdao-dictionary-use-chinese-word-segmentation t)
+(provide 'init-youdao)

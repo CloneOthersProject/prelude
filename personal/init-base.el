@@ -12,6 +12,22 @@
 (require 'iedit)
 (global-set-key (kbd "S-SPC e") 'iedit-mode)
 
+;; 格式化json
+(global-set-key (kbd "S-SPC f j") 'json-pretty-print-buffer)
+
+;; 增强Copy功能
+(defun duplicate-line()
+  (interactive)
+  (move-beginning-of-line 1)
+  (kill-line)
+  (yank)
+  (open-line 1)
+  (next-line 1)
+  (yank))
+
+;; 设置copy当前行
+(global-set-key (kbd "C-d") 'duplicate-line)
+
 ;;设置最近打开的文件
 ;; (require 'recentf)
 ;; (recentf-mode 1)

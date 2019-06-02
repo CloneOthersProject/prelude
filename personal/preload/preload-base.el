@@ -65,6 +65,10 @@
 ;; 解决在lisp-mode 下括号不高亮
 (show-paren-mode t)
 
+;; 在大括号内 Retrun 的时候，光标更智能放在对应的位置。
+(electric-indent-mode t)
+(electric-pair-mode t)
+
 ;; 删除dos系统中的  \r\M
 (defun remove-dos-eol ()
   "Replace DOS eolns CR LF with Unix eolns CR"
