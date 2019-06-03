@@ -1,7 +1,7 @@
 (require 'youdao-dictionary)
 (setq url-automatic-caching t)
 
-(global-set-key (kbd "S-SPC y s") 'youdao-dictionary-search-at-point)
+(global-set-key (kbd "S-SPC y s") 'youdao-dictionary-search-at-point+)
 (global-set-key (kbd "S-SPC y i") 'youdao-dictionary-search-from-input)
 
 ;; 保存搜索记录
