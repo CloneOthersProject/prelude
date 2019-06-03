@@ -4,8 +4,7 @@
 (setq-default cursor-type 'bar)
 ;;设置字体
 (set-default-font "Source Code Variable-16" t t)
-(setq-default line-spacing 1)           ;设置行间距
-
+(setq-default line-spacing 0.01)           ;设置行间距
 ;;设置默认开启全屏
 (setq initial-frame-alist (quote ((fullscreen . maximized))))
 ;;去掉滚动时产生响声
