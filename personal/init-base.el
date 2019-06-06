@@ -34,4 +34,13 @@
 ;; (setq recentf-max-menu-items 30)
 ;; (global-set-key (kbd "C-x C-r") 'recentf-open-files)
 
+(setq hs-allow-nesting t)
+(add-hook 'web-mode-hook 'hs-minor-mode)
+(add-hook 'js2-mode-hook 'hs-minor-mode)
+(add-hook 'js-mode-hook 'hs-minor-mode)
+(add-hook 'css-mode-hook 'hs-minor-mode)
+(add-hook 'scss-mode-hook 'hs-minor-mode)
+(add-hook 'typescript-mode-hook 'hs-minor-mode)
+(add-hook 'less-css-mode-hook 'hs-minor-mode)
+
 (provide 'init-base)
