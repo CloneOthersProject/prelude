@@ -74,7 +74,9 @@
 ;; (when prelude-theme
 ;;   (load-theme prelude-theme t))
 
-(load-theme 'solarized-dark t)
+(load-theme 'spacemacs-dark t)
+
+;;(load-theme 'solarized-dark t)
 
 ;; (when prelude-theme
 ;;   (load-theme solarized-dark t))

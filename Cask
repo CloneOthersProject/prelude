@@ -68,6 +68,7 @@
 (depends-on "smartrep")
 (depends-on "smex")
 (depends-on "solarized-theme")
+(depends-on "spacemacs-theme")
 (depends-on "super-save")
 (depends-on "swiper")
 (depends-on "tide")
