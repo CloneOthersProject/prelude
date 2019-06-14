@@ -4,3 +4,8 @@ https://emacsist.github.io/2015/07/09/%E7%BF%BB%E8%AF%91emacs%E7%9A%84prelude-re
 # 安装的插件
 
 npm install -g bash-language-server vscode-css-languageserver-bin vscode-html-languageserver-bin typescript  javascript-typescript-langserver vue-language-server
+
+
+
+magit
+https://ithelp.ithome.com.tw/articles/10201002
