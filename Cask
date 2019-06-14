@@ -49,6 +49,7 @@
 (depends-on "json-mode")
 (depends-on "lsp-ui")
 (depends-on "magit")
+(depends-on "monokai-theme")
 (depends-on "move-text")
 (depends-on "multiple-cursors")
 (depends-on "nyan-mode")
