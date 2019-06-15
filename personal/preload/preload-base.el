@@ -3,8 +3,10 @@
                                         ;更改光标样式
 (setq-default cursor-type 'bar)
 ;;设置字体
-;; (set-default-font "Source Code Variable-16" t t)
-(set-default-font "Consolas-15" t t)
+ ;; (set-default-font "Source Code Variable-19" t t)
+(set-default-font "Inconsolata-18" t t)
+;; (set-default-font "Courier-18" t t)
+;; (set-default-font "Consolas-18" t t)
 
 ;; (setq-default line-spacing 0.01)           ;设置行间距
 
