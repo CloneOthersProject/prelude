@@ -3,8 +3,11 @@
                                         ;更改光标样式
 (setq-default cursor-type 'bar)
 ;;设置字体
-(set-default-font "Source Code Variable-16" t t)
-(setq-default line-spacing 0.01)           ;设置行间距
+;; (set-default-font "Source Code Variable-16" t t)
+(set-default-font "Consolas-15" t t)
+
+;; (setq-default line-spacing 0.01)           ;设置行间距
+
 ;;设置默认开启全屏
 (setq initial-frame-alist (quote ((fullscreen . maximized))))
 ;;去掉滚动时产生响声
@@ -15,7 +18,6 @@
 (setq-default auto-save-default nil)
 ;; 内容有修改时自动更新文件
 (global-auto-revert-mode t)
-
 
 ;; 设置默认字符集
 (set-language-environment "UTF-8")
@@ -30,14 +32,19 @@
   (save-excursion
     (if (region-active-p)
         (progn
+          (whitespace-cleanup)
           (indent-region (region-beginning) (region-end))
           (message "Indent selected region."))
       (progn
+        (whitespace-cleanup)
         (indent-buffer)
         (message "Indent buffer.")))))
 
 ;; 代码缩进设置快捷键
 (global-set-key (kbd "S-SPC f i") 'indent-region-or-buffer)
+
+;; 去掉多余空格
+(global-set-key (kbd "S-SPC f SPC") 'whitespace-cleanup)
 
 (defun open-init-file()
   (interactive)
