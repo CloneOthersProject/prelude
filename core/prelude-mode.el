@@ -37,11 +37,13 @@
 
 (defvar prelude-mode-map
   (let ((map (make-sparse-keymap)))
-    (define-key map (kbd "C-c o") 'crux-open-with)
-    (define-key map (kbd "C-c g") 'prelude-google)
-    (define-key map (kbd "C-c G") 'prelude-github)
-    (define-key map (kbd "C-c y") 'prelude-youtube)
-    (define-key map (kbd "C-c U") 'prelude-duckduckgo)
+    (define-key map (kbd "S-SPC o") 'crux-open-with)
+    (define-key map (kbd "S-SPC s g") 'prelude-google)
+    (define-key map (kbd "S-SPC s G") 'prelude-github)
+    (define-key map (kbd "S-SPC s b") 'prelude-baidu)
+    (define-key map (kbd "S-SPC s c") 'prelude-bing)
+    (define-key map (kbd "S-SPC s y") 'prelude-youtube)
+    (define-key map (kbd "S-SPC s U") 'prelude-duckduckgo)
     ;; mimic popular IDEs binding, note that it doesn't work in a terminal session
     (define-key map (kbd "C-a") 'crux-move-beginning-of-line)
     (define-key map [(shift return)] 'crux-smart-open-line)

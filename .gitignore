@@ -28,3 +28,4 @@ prelude-cheatsheet.log
 .cache
 .lsp-session-v1
 .youdao
+transient/history.el
