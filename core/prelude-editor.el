@@ -229,6 +229,7 @@
 (require 'projectile)
 (setq projectile-cache-file (expand-file-name  "projectile.cache" prelude-savefile-dir))
 (projectile-mode t)
+(setq projectile-switch-project-action 'projectile-dired)
 
 ;; avy allows us to effectively navigate to visible things
 (require 'avy)
