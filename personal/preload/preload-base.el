@@ -83,9 +83,6 @@
   (interactive)
   (goto-char (point-min))
   (while (search-forward "\r" nil t) (replace-match "")))
-
-
-
 ;; 增强Copy功能
 (defun duplicate-line()
   (interactive)

@@ -244,6 +244,10 @@
 (global-set-key (kbd "M-%") 'anzu-query-replace)
 (global-set-key (kbd "C-M-%") 'anzu-query-replace-regexp)
 
+;; 在成对括号之间跳转
+(global-set-key (kbd "M-n") 'forward-sexp)
+(global-set-key (kbd "M-p") 'backward-sexp)
+
 ;; dired - reuse current buffer by pressing 'a'
 (put 'dired-find-alternate-file 'disabled nil)
 (with-eval-after-load 'dired
