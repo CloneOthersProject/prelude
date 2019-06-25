@@ -1,7 +1,15 @@
+;; (use-package lsp-mode
+;;   :ensure t
+;;   :commands lsp
+;;   :hook ((typescript-mode js-mode css-mode less-css-mode scss-mode web-mode) . lsp)
+;;   :init
+;;   (setq lsp-prefer-flymake nil)
+;;   (require 'lsp-clients))
+
 (use-package lsp-mode
   :ensure t
   :commands lsp
-  :hook ((typescript-mode js-mode css-mode less-css-mode scss-mode web-mode) . lsp)
+  :hook ((js-mode css-mode less-css-mode scss-mode) . lsp)
   :init
   (setq lsp-prefer-flymake nil)
   (require 'lsp-clients))
