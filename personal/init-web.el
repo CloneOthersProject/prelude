@@ -14,7 +14,7 @@
   :ensure t
   :init
   (global-company-mode)
-  (setq company-idle-delay 0.2)
+  (setq company-idle-delay 0.1)
   (setq company-minimum-prefix-length 1)
   (setq company-show-numbers nil))
 
