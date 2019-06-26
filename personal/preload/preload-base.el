@@ -4,9 +4,9 @@
 (setq-default cursor-type 'bar)
 ;;设置字体
  ;; (set-default-font "Source Code Variable-19" t t)
-(set-default-font "Inconsolata-18" t t)
+;;(set-default-font "Inconsolata-18" t t)
 ;; (set-default-font "Courier-18" t t)
-;; (set-default-font "Consolas-18" t t)
+(set-default-font "Consolas-14" t t)
 
 ;; (setq-default line-spacing 0.01)           ;设置行间距
 
