@@ -3,6 +3,7 @@
 
 (depends-on "ace-window")
 (depends-on "anzu")
+(depends-on "avy")
 (depends-on "beacon")
 (depends-on "bind-key")
 (depends-on "browse-kill-ring")
