@@ -104,7 +104,9 @@
 
 ;;解决emacs ctrl-space与输入法冲突
 (global-unset-key (kbd "C-SPC"))
-(global-set-key (kbd "S-SPC S-SPC") 'set-mark-command)
+(global-set-key (kbd "S-SPC SPC") 'set-mark-command)
+(global-set-key (kbd "S-SPC n") 'make-frame-command)
+
 
 ;; 把下拉提示选项上下键改成 C-n 和 C-p
 (with-eval-after-load 'company
