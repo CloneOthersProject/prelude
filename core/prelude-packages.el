@@ -117,7 +117,7 @@ Missing packages are installed automatically."
     (prelude-require-packages prelude-packages)))
 
 ;; run package installation
-;;(prelude-install-packages)
+(prelude-install-packages)
 
 (defun prelude-list-foreign-packages ()
   "Browse third-party packages not bundled with Prelude.
