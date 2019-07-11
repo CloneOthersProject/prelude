@@ -113,8 +113,13 @@ that can occur between two notifications.  The default is
 (setq erc-server-coding-system '(utf-8 . utf-8))
 
 
-(defvar my-fav-irc '( "irc.freenode.net" )
-  "Stores the list of IRC servers that you want to connect to with start-irc.")
+;; (defvar my-fav-irc '( "irc.freenode.net" )
+;;   "Stores the list of IRC servers that you want to connect to with start-irc.")
+
+(setq my-fav-irc '("irc.freenode.net"
+                   "irc.oftc.net"
+                   "irc.mozilla.org"
+                   "irc.gnome.org"))
 
 (defvar bye-irc-message "Asta la vista"
   "Message string to be sent while quitting IRC.")
