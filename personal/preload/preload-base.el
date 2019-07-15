@@ -48,6 +48,10 @@
 ;; 去掉多余空格
 (global-set-key (kbd "S-SPC f SPC") 'whitespace-cleanup)
 
+;; set beginning-of buffer
+(global-set-key (kbd "C-c b p") 'beginning-of-buffer)
+(global-set-key (kbd "C-c b n") 'end-of-buffer)
+
 (defun open-init-file()
   (interactive)
   (find-file "~/.emacs.d/init.el"))

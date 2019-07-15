@@ -82,6 +82,7 @@
  '(web-mode-css-indent-offset 2)
  '(web-mode-enable-auto-expanding t)
  '(web-mode-enable-auto-indentation nil)
+ '(web-mode-markup-indent-offset 2)
  '(web-mode-sql-indent-offset 2)
  '(weechat-color-list
    (quote

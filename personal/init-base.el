@@ -7,7 +7,7 @@
 
 ;; 全局找文件
 (require 'helm-ag)
-(global-set-key (kbd "S-SPC p f") 'helm-do-ag-project-root)
+(global-set-key (kbd "C-c q") 'helm-do-ag-project-root)
 
 (require 'iedit)
 (global-set-key (kbd "S-SPC e") 'iedit-mode)
